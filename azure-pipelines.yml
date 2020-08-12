@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 variables:
-
+  group: gn_pixelistic
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '7b5a1ea9-b7d0-4fb1-bb14-fe6c92a30ac0'
   imageRepository: 'gatalyakpixelisticbe'
