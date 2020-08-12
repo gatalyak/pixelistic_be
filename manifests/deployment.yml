@@ -21,4 +21,4 @@ spec:
           - containerPort: 3000
           env:
           - name: MONGO_DB
-            value: "mongodb://admin:PassMongo@pixelistic.southcentralus.cloudapp.azure.com:27017/pixelapp"
+            value: __MONGO_DB__
