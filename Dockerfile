@@ -1,5 +1,6 @@
 FROM node:10
 
+ENV FRONT_URL=$FRONT_URL
 
 # Copy script to check for services
 #COPY docker/wait-for /wait-for
