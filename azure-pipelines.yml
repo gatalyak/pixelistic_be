@@ -17,7 +17,7 @@ variables:
   value: 'gatalyakpixelisticbe'
 - name: containerRegistry
   value: 'pixelisticacr.azurecr.io'
-- name dockerfilePath
+- name: dockerfilePath
   value: '**/Dockerfile'
 - name: tag
   value: '$(Build.BuildId)'  
