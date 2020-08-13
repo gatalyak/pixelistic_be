@@ -25,10 +25,12 @@ variables:
   value: 'pixelisticacr196930c5-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+- name: vmImageName
+  value: 'ubuntu-latest'
   
   # Name of the new namespace being created to deploy the PR changes.
-  k8sNamespaceForPR: 'review-app-$(System.PullRequest.PullRequestId)'
+- name:  k8sNamespaceForPR
+  value: 'review-app-$(System.PullRequest.PullRequestId)'
 
 stages:
 - stage: Build
