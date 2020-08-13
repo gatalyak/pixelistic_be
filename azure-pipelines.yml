@@ -9,14 +9,20 @@ resources:
 - repo: self
 
 variables:
-  - group: pixelistic
-  # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '7b5a1ea9-b7d0-4fb1-bb14-fe6c92a30ac0'
-  imageRepository: 'gatalyakpixelisticbe'
-  containerRegistry: 'pixelisticacr.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
-  tag: '$(Build.BuildId)'
-  imagePullSecret: 'pixelisticacr196930c5-auth'
+- group: pixelistic
+# Container registry service connection established during pipeline creation
+- name: dockerRegistryServiceConnection
+  value: '7b5a1ea9-b7d0-4fb1-bb14-fe6c92a30ac0'
+- name: imageRepository
+  value: 'gatalyakpixelisticbe'
+- name: containerRegistry
+  value: 'pixelisticacr.azurecr.io'
+- name dockerfilePath
+  value: '**/Dockerfile'
+- name: tag
+  value: '$(Build.BuildId)'  
+- name:  imagePullSecret
+  value: 'pixelisticacr196930c5-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
